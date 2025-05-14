@@ -1,0 +1,34 @@
+/* reset.scss */
+  
+  /* 2. Évite que les images ou éléments débordent */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 3. Supprime la taille de police par défaut et assure une base cohérente */
+  html, body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: white;
+  }
+  
+  /* 4. Enlève les décorations des liens */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* 5. Enlève les listes stylisées */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* 6. Enlève les bordures par défaut */
+  button, input, select, textarea {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
