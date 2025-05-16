@@ -1,0 +1,137 @@
+@import '../variables';
+
+
+.hostNrating {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.modules {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 40px
+}
+
+.PartieRating {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: right;
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.PartieHost {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+
+    img {
+
+        border-radius: 50px;
+        width: 90px !important;
+        height: 90px !important;
+    }
+    
+    P {
+        width: 100px;
+        color: $main-color;
+        margin-right: 10px;
+    }
+}
+
+
+
+.Descriptionlogement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .Titrelogement {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+            color: $main-color;
+            margin: 0;
+        }
+        p {
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+    }
+
+    .tag {
+        margin-right: 20px;
+        background-color: $main-color;
+        border-radius: 13px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+
+    }
+}
+
+
+.Lesboutons {
+    width: 100%;
+    height: 100px;
+}
+
+.BoutonS {
+    position: absolute;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.BoutonP {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  left: 100px;
+}
+
+.carrousel {
+    position: relative;
+    img {
+        
+        object-fit: cover;
+        height: 400px;
+        display: block;
+        
+        width: 100%;
+        
+        margin-bottom: 40px;
+        
+    }
+    
+}
+
+.fiche-logement {
+    display: flex;
+    flex-direction: column;
+}

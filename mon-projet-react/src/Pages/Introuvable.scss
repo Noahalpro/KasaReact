@@ -1,0 +1,28 @@
+.TexteP {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 250px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        color: #FF6060;
+    }
+    align-items: center;
+    margin-bottom: 20px;
+
+    p {
+        margin: 0;
+        color: #FF6060;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    a {
+        text-decoration: underline !important;
+    }
+
+}

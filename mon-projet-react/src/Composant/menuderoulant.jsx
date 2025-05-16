@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './menuderoulant.scss';
-import arrow from '../assets/arrowbro.png';
+import arrow from '../assets/arrowbro.svg';
 
-function Dropdown({ title, children }) {
+function Dropdown({ title, children, className = '' }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="dropdown">
+    <div className= {`dropdown ${className}`}>
       <button
         className="dropdown-header"
         onClick={() => setIsOpen(!isOpen)}
