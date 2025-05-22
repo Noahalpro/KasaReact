@@ -7,6 +7,13 @@
     gap: 50px;
 }
 
+@media screen and (max-width: 480px) {
+    figure {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 .ImageAccueil {
     position: relative;
     width: 100%;
@@ -24,6 +31,16 @@
     font-size: 40px;
     
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+    
+    @media screen and (max-width: 480px) {
+        top: 40%;
+        font-size: 35px;
+        
+        left: 55%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+    }
 
 }
 
@@ -52,13 +69,18 @@
     padding-bottom: 20px;
     margin-bottom: 30px;
 
+    @media screen and (max-width: 480px) {
+        justify-content: center;
+        background-color: white;
+    }
+
 }
 
 
 
 .CardLocation {
     position: relative;
-    width: fit-content
+    width: fit-content;
 }
 
 .titlecard {
@@ -80,4 +102,8 @@
     object-fit: cover;
     
     border-radius: 3% 3%;
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
 }

@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-content: center;
+    justify-content: center;
 
     h1 {
         margin: 0;
@@ -19,10 +21,28 @@
         color: #FF6060;
         font-size: 30px;
         margin-bottom: 40px;
+        width: fit-content;
+        text-align: center;
     }
 
     a {
         text-decoration: underline !important;
+    }
+
+    
+    @media screen and (max-width: 480px) {
+
+        gap: 100px;
+        margin-bottom: 100px;
+
+        h1 {
+            font-size: 150px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    
     }
 
 }

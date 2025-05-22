@@ -27,23 +27,28 @@ const flecheprecedent = () => {
   };
   const { id } = useParams();
   const bien = logements.find((b) => b.id === id);
+  const longueur = bien.pictures.length
+
+  
 
   if (!bien) return <p>Ce logement n’existe pas.</p>;
 
   return (
 
     <div className="fiche-logement">
-        
-    <button className='BoutonS' onClick={flechesuivant}>
-        <img src={fleche} alt="" />
-    </button>
 
     <div className="carrousel">
+      
+        
+    <button className='BoutonS' onClick={flechesuivant} style={{ display: bien.pictures.length === 1 ? 'none' : null }}>
+        <img src={fleche} alt="" />
+    </button>
           <img src={bien.pictures[currentIndex]}  alt={`photo ${currentIndex + 1}`} />
-      </div>
-    <button className='BoutonP' onClick={flecheprecedent}>
+    
+    <button className='BoutonP' onClick={flecheprecedent} style={{ display: bien.pictures.length === 1 ? 'none' : null }} >
         <img src={flecheP} alt="" />
     </button>
+      </div>
     
 
     <div className='Descriptionlogement'>
