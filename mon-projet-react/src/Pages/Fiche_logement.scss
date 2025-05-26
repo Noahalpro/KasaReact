@@ -1,5 +1,13 @@
 @import '../variables';
 
+.listeTag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
 
 .hostNrating {
     display: flex;

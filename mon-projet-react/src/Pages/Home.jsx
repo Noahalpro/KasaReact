@@ -1,25 +1,8 @@
-import { useNavigate } from 'react-router-dom';
+
 import biens from '../logements.json';
 import './Home.scss';
 import ImageAccueil from '../assets/ImageAccueil.png'
-
-function Card ({id,location,cover,title}) {
-
-  const navigate = useNavigate();
-
-  const Auclick = () => {
-    navigate(`/logement/${id}`);
-  };
-    return (
-    <figure className="CardLocation" onClick={Auclick}>
-        <img src={cover} alt={title} />
-    <div className="titlecard">
-      <h2>{location}</h2>
-
-    </div>
-
-    </figure>
-)}
+import Card from '../Composant/card'
 
 function Home() {
     console.log('Home rendu ✅');
@@ -34,6 +17,7 @@ function Home() {
         {biens.map((bien) => (
         <Card
           id={bien.id}
+          key= {bien.id}
           title={bien.title}
           location={bien.location}
           cover={bien.cover}
