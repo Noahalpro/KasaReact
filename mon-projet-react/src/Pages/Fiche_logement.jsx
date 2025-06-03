@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import logements from '../logements.json';
 import fleche from '../assets/fleched.png'
 import flecheP from '../assets/precedent.png'
@@ -29,9 +29,15 @@ const flecheprecedent = () => {
   const bien = logements.find((b) => b.id === id);
   const longueur = bien.pictures.length
 
-  
+  const navigate = useNavigate();
 
-  if (!bien) return <p>Ce logement n’existe pas.</p>;
+
+  if (!bien) return useEffect(() => {
+    
+      navigate('/404'); // ou '/introuvable' selon ta route
+    
+  }, [bien, navigate])
+  ;
 
   return (
 

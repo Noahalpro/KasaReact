@@ -18,6 +18,8 @@ function AppRouter() {
 
         <Route path="*" element={<Introuvable />} />
 
+
+
       </Route>
     </Routes>
   );
