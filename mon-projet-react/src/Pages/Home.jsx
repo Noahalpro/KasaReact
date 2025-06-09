@@ -5,13 +5,13 @@ import ImageAccueil from '../assets/ImageAccueil.png'
 import Card from '../Composant/card'
 
 function Home() {
-    console.log('Home rendu ✅');
     return (
         <div className='BodyHome'>
             
         <section className="ImageAccueil">
         <img src={ImageAccueil} alt="" />
         <h1>Chez vous, partout et ailleurs</h1>
+        <p className='hphone'>Chez vous,<br />partout et ailleurs</p>
         </section>
         <div className="GalleryLocation">
         {biens.map((bien) => (

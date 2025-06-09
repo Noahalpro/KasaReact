@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './Composant/Layout'; 
 import Home from './Pages/Home';
-import A_propos from './Pages/A_propos';
+import About from './Pages/About';
 import Introuvable from './Pages/Introuvable';
-import Logement from './Pages/Fiche_logement'; 
+import Logement from './Pages/FicheLogement'; 
 
 function AppRouter() {
   return (
@@ -14,9 +14,10 @@ function AppRouter() {
       
         <Route path="logement/:id" element={<Logement />} />
         
-        <Route path="about" element={<A_propos />} />
+        <Route path="about" element={<About />} />
 
         <Route path="*" element={<Introuvable />} />
+        
 
 
 

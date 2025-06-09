@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import './menuderoulant.scss';
+import './Collapse.scss';
 import arrow from '../assets/arrowbro.svg';
 
-function Dropdown({ title, children, className = '' }) {
+function Collapse({ title, children, className = '' }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,4 +23,4 @@ function Dropdown({ title, children, className = '' }) {
   );
 }
 
-export default Dropdown;
+export default Collapse;

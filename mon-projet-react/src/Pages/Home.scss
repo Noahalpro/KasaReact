@@ -33,7 +33,26 @@
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
     
     @media screen and (max-width: 480px) {
-        top: 40%;
+        display: none;
+
+    }
+
+}
+
+.hphone {
+    position: absolute;
+    color: white;
+    top:40px;
+    right: 300px;
+    height: auto;
+    font-size: 40px;
+    display: none;
+    font-weight: 700;
+    @media screen and (max-width: 480px) {
+        
+        display: block;
+        
+        top: 35%;
         font-size: 35px;
         
         left: 55%;
@@ -41,9 +60,7 @@
         width: 100%;
 
     }
-
 }
-
 
 #root {
     width: 100%;
